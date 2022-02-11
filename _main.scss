@@ -1,0 +1,30 @@
+.main {
+  padding: 160px 20px 20px 60px;
+}
+.hero {
+  > .hero__title {
+    font-family: Merriweather;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 120px;
+  }
+  > .hero__text {
+    font-size: 20px;
+    line-height: 40px;
+    width: 470px;
+  }
+  > .hero__btn {
+    background: #bdae82;
+    &:hover {
+      color: white;
+    }
+  }
+}
+.btn {
+  color: black;
+  text-align: center;
+  font-size: 20px;
+  width: 220px;
+  height: 55px;
+  line-height: 40px;
+}

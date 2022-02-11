@@ -1,0 +1,49 @@
+.footer {
+  padding: 50px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.footer__text {
+  font-size: 20px;
+  line-height: 50px;
+}
+.footer__social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  .social__link {
+    width: 32px;
+    height: 32px;
+    &.insta {
+      background-image: url("../img/inst\ 1.png");
+      &:hover {
+        background-image: url("../img/inst\ 2.png");
+      }
+    }
+    &.fb {
+      background-image: url("../img/fb\ 1.png");
+      &:hover {
+        background-image: url("../img/fb\ 2.png");
+      }
+    }
+    &.tw {
+      background-image: url("../img/tw\ 1.png");
+      &:hover {
+        background-image: url("../img/tw\ 2.png");
+      }
+    }
+    &.pin {
+      background-image: url("../img/pinterest\ 1.png");
+      &:hover {
+        background-image: url("../img/pinterest\ 2.png");
+      }
+    }
+  }
+}
