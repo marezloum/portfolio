@@ -4,8 +4,9 @@
 
 .price__items {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 25px;
 }
 .price__item {
   display: flex;
@@ -41,5 +42,11 @@
     &:hover {
       color: white;
     }
+  }
+}
+@media (max-width: 992px) {
+  .price__items {
+    flex-wrap: wrap;
+    gap: 50px;
   }
 }

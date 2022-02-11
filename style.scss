@@ -107,7 +107,12 @@ h6 {
   padding: 0 20px;
   margin: 0 auto;
 }
-
+@media (max-width: 992px) {
+  .container {
+    max-width: 970px;
+    padding: 0 60px;
+  }
+}
 @import "_header";
 @import "_main";
 @import "_skills";

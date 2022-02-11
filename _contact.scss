@@ -17,13 +17,21 @@
   width: 450px;
   height: 445px;
 }
-
+.contacts__form-title {
+  font-family: Merriweather;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 64px;
+  text-align: center;
+  color: #bdae82;
+  margin-bottom: 40px;
+}
 .contacts__form-form {
   display: flex;
   flex-direction: column;
   gap: 20px;
   > input {
-    padding: 20px;
+    padding: 5px 20px;
     border: 2px solid #bdae82;
     background-color: transparent;
     color: #bdae82;
@@ -53,5 +61,19 @@
     &:hover {
       color: white;
     }
+  }
+}
+@media (max-width: 992px) {
+  .contact {
+    padding: 100px 0;
+  }
+  .contact__bg {
+    height: 600px;
+  }
+  .contacts__wrapper {
+    justify-content: center;
+  }
+  .contacts_form-btn {
+    margin: 0 auto;
   }
 }

@@ -30,15 +30,17 @@
 }
 .skills__items {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 .skills__item {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 320px;
+  max-width: 320px;
+  width: fit-content;
   height: 240px;
   padding: 0 20px;
   > img {

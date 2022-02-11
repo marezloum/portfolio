@@ -5,10 +5,11 @@
 .video__player {
   background-image: url(../img/video-player.png);
   background-repeat: no-repeat;
-  background-position: center;
-  width: 1400px;
   height: 705px;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .video__play-button {
   background-image: url(../img/Play_Unvisited.png);
@@ -16,11 +17,27 @@
   background-position: center;
   width: 130px;
   height: 130px;
-  position: absolute;
-  left: 635px;
-  top: 287.5px;
   cursor: pointer;
   &:hover {
     background-image: url(../img/Play_hover.png);
+  }
+}
+@media (max-width: 992px) {
+  .video {
+    padding: 100px 0;
+    .container {
+      width: 100%;
+      padding: 0;
+    }
+  }
+  .video__player {
+    background-image: url(../img/video-player-mob.jpg);
+    height: 468px;
+    background-size: cover;
+  }
+  .video__play-button {
+    width: 64px;
+    height: 64px;
+    background-size: contain;
   }
 }
