@@ -777,6 +777,12 @@ h6 {
   }
 }
 
+@media (max-width: 992px) {
+  .contact {
+    padding-bottom: 0;
+  }
+}
+
 .footer {
   padding: 50px 20px;
   display: -webkit-box;
@@ -853,4 +859,19 @@ h6 {
 
 .footer__social .social__link.pin:hover {
   background-image: url("../img/pinterest 2.png");
+}
+
+@media (max-width: 992px) {
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 210px;
+    margin: 0 auto;
+    padding: 28px 0;
+  }
 }
