@@ -251,8 +251,9 @@ h6 {
   padding: 100px 40px 0;
 }
 
-.skills__title {
+.title {
   font-family: Merriweather;
+  font-style: normal;
   font-weight: bold;
   font-size: 40px;
   line-height: 80px;
@@ -261,26 +262,29 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 700px;
-  margin: 0 auto 60px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 60px;
 }
 
-.skills__title > :first-child,
-.skills__title :last-child {
+.title::before, .title::after {
+  content: "";
+  width: 274px;
+  display: inline-block;
   height: 2px;
   background-color: #bdae82;
-  width: 100%;
-  display: block;
 }
 
-.skills__title > :nth-child(2) {
-  margin: 0 20px;
+.title::before {
+  margin-right: 20px;
+}
+
+.title::after {
+  margin-left: 20px;
 }
 
 .skills__items {
@@ -318,14 +322,6 @@ h6 {
   margin-bottom: 60px;
 }
 
-.skills__item > .skill__item-title {
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 40px;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
 .skills__item > .skill__item-text {
   font-size: 18px;
   line-height: 36px;
@@ -334,38 +330,6 @@ h6 {
 
 .portfolio {
   padding: 100px 40px 0;
-}
-
-.portfolio__title {
-  font-family: Merriweather;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 80px;
-  text-align: center;
-  color: #bdae82;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 700px;
-  margin: 0 auto 60px;
-}
-
-.portfolio__title > :first-child,
-.portfolio__title :last-child {
-  height: 2px;
-  background-color: #bdae82;
-  width: 100%;
-  display: block;
-}
-
-.portfolio__title > :nth-child(2) {
-  margin: 0 20px;
 }
 
 .portfolio__buttons {
@@ -421,38 +385,6 @@ h6 {
   padding: 100px 40px 0;
 }
 
-.video__title {
-  font-family: Merriweather;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 80px;
-  text-align: center;
-  color: #bdae82;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 700px;
-  margin: 0 auto 60px;
-}
-
-.video__title > :first-child,
-.video__title :last-child {
-  height: 2px;
-  background-color: #bdae82;
-  width: 100%;
-  display: block;
-}
-
-.video__title > :nth-child(2) {
-  margin: 0 20px;
-}
-
 .video__player {
   background-image: url(../img/video-player.png);
   background-repeat: no-repeat;
@@ -480,38 +412,6 @@ h6 {
 
 .price {
   padding: 100px 40px 0;
-}
-
-.price__title {
-  font-family: Merriweather;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 80px;
-  text-align: center;
-  color: #bdae82;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 700px;
-  margin: 0 auto 60px;
-}
-
-.price__title > :first-child,
-.price__title :last-child {
-  height: 2px;
-  background-color: #bdae82;
-  width: 100%;
-  display: block;
-}
-
-.price__title > :nth-child(2) {
-  margin: 0 20px;
 }
 
 .price__items {
@@ -549,12 +449,6 @@ h6 {
 .price__item > p {
   font-family: Merriweather;
   font-weight: bold;
-}
-
-.price__item .price_item-title {
-  font-size: 28px;
-  line-height: 56px;
-  margin-bottom: 20px;
 }
 
 .price__item .price_item-price {
@@ -610,15 +504,6 @@ h6 {
 .contacts__form {
   width: 450px;
   height: 445px;
-}
-
-.contacts__form-title {
-  font-family: Merriweather;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 80px;
-  color: #bdae82;
-  margin-bottom: 40px;
 }
 
 .contacts__form-form {
