@@ -53,3 +53,17 @@
     text-align: center;
   }
 }
+@media (max-width: 840px) {
+  .skills__item {
+    height: unset;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+@media (max-width: 320px) {
+  .skils {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+}

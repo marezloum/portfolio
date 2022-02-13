@@ -50,3 +50,8 @@
     gap: 50px;
   }
 }
+@media (max-width: 320px) {
+  .price__item {
+    padding: 4px 4px;
+  }
+}

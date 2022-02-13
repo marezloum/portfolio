@@ -82,3 +82,14 @@
     padding-bottom: 0;
   }
 }
+@media (max-width: 320px) {
+  .contacts__form-form > input {
+    padding: 5px 20px;
+    border: 2px solid #bdae82;
+    background-color: transparent;
+    color: #bdae82;
+    /* font-size: 20px; */
+    line-height: 40px;
+}
+
+}

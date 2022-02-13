@@ -37,6 +37,14 @@
     flex-wrap: wrap;
   }
   .portfolio__button {
-    width: 49%;
+    width: 100%;
+  }
+}
+@media (max-width: 320px) {
+  .portfolio__button {
+    width: 100%;
+  }
+  .portfolio {
+    padding: 10px;
   }
 }

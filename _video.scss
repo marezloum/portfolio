@@ -41,3 +41,9 @@
     background-size: contain;
   }
 }
+@media (max-width: 320px) {
+  .video__player {
+    background-size: contain;
+    height: 170px;
+  }
+}
