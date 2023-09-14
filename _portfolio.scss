@@ -29,8 +29,12 @@
   gap: 25px;
 }
 .portfolio__item {
-  width: 450px;
+  max-width: 450px;
+  width: 100%;
   height: 560px;
+  img {
+    width: 100%;
+  }
 }
 @media (max-width: 992px) {
   .container {
