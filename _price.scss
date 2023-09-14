@@ -45,12 +45,19 @@
   }
 }
 @media (max-width: 992px) {
+  .main__nav {
+    display: none;
+  }
+
   .price__items {
     flex-wrap: wrap;
     gap: 50px;
   }
 }
 @media (max-width: 320px) {
+  .main__nav {
+    display: none;
+  }
   .price__item {
     padding: 4px 4px;
   }

@@ -28,7 +28,12 @@
   height: 55px;
   line-height: 40px;
 }
-
+@media (max-width: 992px) {
+  .main {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
 @media (max-width: 320px) {
   .container {
     padding: 0 2px;
